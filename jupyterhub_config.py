@@ -170,7 +170,7 @@ c.JupyterHub.ip = '128.138.87.12'
 ## The Proxy Auth token.
 #  
 #  Loaded from the CONFIGPROXY_AUTH_TOKEN env variable by default.
-#c.JupyterHub.proxy_auth_token = ''
+c.ConfigurableHTTPProxy.auth_token = '<see backup>'
 
 ## Interval (in seconds) at which to check if the proxy is running.
 #c.JupyterHub.proxy_check_interval = 30
@@ -217,12 +217,12 @@ c.JupyterHub.ip = '128.138.87.12'
 ## Path to SSL certificate file for the public facing interface of the proxy
 #  
 #  Use with ssl_key
-c.JupyterHub.ssl_cert = '/etc/pki/tls/certs/ca.crt'
+c.JupyterHub.ssl_cert = '/etc/letsencrypt/live/siwenna.colorado.edu/cert.pem'
 
 ## Path to SSL key file for the public facing interface of the proxy
 #  
 #  Use with ssl_cert
-c.JupyterHub.ssl_key = '/etc/pki/tls/private/ca.key'
+c.JupyterHub.ssl_key = '/etc/letsencrypt/live/siwenna.colorado.edu/privkey.pem'
 
 ## Host to send statsd metrics to
 #c.JupyterHub.statsd_host = ''
@@ -576,6 +576,7 @@ c.Authenticator.admin_users = {'mpiper', 'huttone'}
 #  If any errors are encountered when opening/closing PAM sessions, this is
 #  automatically set to False.
 #c.PAMAuthenticator.open_sessions = True
+c.PAMAuthenticator.open_sessions = False
 
 ## The name of the PAM service to use for authentication
 #c.PAMAuthenticator.service = 'login'
