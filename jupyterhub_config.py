@@ -207,7 +207,13 @@ c.ConfigurableHTTPProxy.auth_token = '<see backup>'
 #              'environment': 
 #          }
 #      ]
-#c.JupyterHub.services = []
+c.JupyterHub.services = [
+        {
+            'name': 'cull-idle',
+            'admin': True,
+            'command': 'python /etc/jupyterhub/cull_idle_servers.py --timeout=3600'.split(),
+        }
+    ]
 
 ## The class to use for spawning single-user servers.
 #  
