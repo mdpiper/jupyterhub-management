@@ -10,7 +10,7 @@ Two global directories are provided in your home directory:
 * `scratch`: A place to share code, notebooks, or other files with other users
 
 If you have any questions about using this JupyterHub, please contact us
-through the CSDMS Help Desk (https://github.com/csdms/help-desk).
+through the CSDMS Help Desk (https://csdms.github.io/help-desk).
 
 CSDMS and the OpenEarthscape project are supported by the U.S. National Science
 Foundation. See https://openearthscape.org for more information.
