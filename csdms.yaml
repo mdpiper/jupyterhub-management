@@ -20,7 +20,7 @@ dependencies:
   - bmipy
   # - bmi-example-python
   - pymt >=1.3
-  - landlab >=2.0
+  - landlab >=2.5
   - terrainbento
   - pymt_cem
   - pymt_child
@@ -32,4 +32,8 @@ dependencies:
   - bmi-geotiff
   - imageio
   - tqdm
-  - meanderpy
+  - numba
+  - scikit-image
+  - pillow
+  - pip:
+    - meanderpy
