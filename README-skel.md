@@ -1,9 +1,16 @@
-# OpenEarthscape JupyterHub : jupyter
+# OpenEarthscape JupyterHub <!-- : jupyter lab frontier -->
 
 <img align="right" style="margin:0 0 20px 20px" width="35%" height="35%" src="./data/oes-logo.png">
 
-Welcome! This *jupyter* instance of the OpenEarthscape JupyterHub is free
-and available for use by all CSDMS members, whether you're an undergraduate,
+Welcome! This *jupyter* instance of the OpenEarthscape JupyterHub
+is designed for exploration of CSDMS modeling tools.
+<!-- Welcome! This *lab* instance of the OpenEarthscape JupyterHub
+is designed for running workshops and classes. -->
+<!-- Welcome! This *frontier* instance of the OpenEarthscape JupyterHub
+is designed for running models. -->
+
+It's free and available for use by all CSDMS members,
+whether you're an undergraduate,
 grad student, postdoc, researcher, or faculty.
 
 If you have any questions about using this JupyterHub, please contact us
