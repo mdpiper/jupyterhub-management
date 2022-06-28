@@ -1,0 +1,32 @@
+name: csdms
+channels:
+  - conda-forge
+dependencies:
+  - bmi-geotiff
+  - ipykernel
+  - pymt_permamodel
+  - imageio
+  - bmipy
+  - xarray
+  - pillow
+  - numba
+  - scikit-image
+  - pymt_sedflux
+  - scipy
+  - landlab[version='>=2.5']
+  - pymt_cem
+  - pymt_hydrotrend
+  - pymt_child
+  - pymt[version='>=1.3']
+  - matplotlib
+  - pandas
+  - notebook
+  - terrainbento
+  - bmi-topography
+  - tqdm
+  - pip
+  - python=3
+  - pymt_ecsimplesnow
+  - numpy
+  - sequence-model
+prefix: /opt/tljh/user/envs/csdms
