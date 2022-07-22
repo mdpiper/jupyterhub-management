@@ -1,0 +1,45 @@
+#! /usr/bin/env bash
+# Add/remove a user to/from the allow list for a tljh instance.
+
+help() {
+    echo -e "Usage: allowhubuser USER [-r | --remove] [-h | --help]"
+    exit 0
+}
+
+if [ "$#" == 0 ]; then
+    help
+fi
+
+deny=
+user=
+
+i=1;
+for argument in "$@"; do
+    # echo "Argument $i: $argument";
+    case $argument in
+        -h|--help)
+            help
+            ;;
+        -r|--remove)
+            deny=1
+            ;;
+        -?*)
+            help
+            ;;
+        *)
+            if [ -z $user ]; then user=$argument; else help; fi
+            ;;
+    esac
+
+    i=$((i + 1));
+done
+
+if [ $user ]; then
+    echo -e "user = $user"
+    echo -e "deny = $deny"
+    # Add/remove actions take place here
+else
+    help
+fi
+
+exit 0
