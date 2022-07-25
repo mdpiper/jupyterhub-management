@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 # Push a single file to the home directory of all users on a tljh instance.
 
-FILE=/etc/skel/hello-lab.ipynb
+FILE=/etc/skel/hello-$OES_HUB.ipynb
 
 echo "Copying $_file:"
 for _dir in /home/*; do
