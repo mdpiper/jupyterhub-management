@@ -3,7 +3,7 @@
 
 FILE=/etc/skel/hello-$OES_HUB.ipynb
 
-echo "Copying $_file:"
+echo "Copying $FILE:"
 for _dir in /home/*; do
     /usr/bin/cp "$FILE" $_dir
     echo "-> $_dir"
