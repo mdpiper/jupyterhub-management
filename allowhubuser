@@ -12,6 +12,7 @@ fi
 
 deny=
 user=
+action=
 
 i=1;
 for argument in "$@"; do
@@ -35,9 +36,14 @@ for argument in "$@"; do
 done
 
 if [ $user ]; then
-    echo -e "user = $user"
-    echo -e "deny = $deny"
-    # Add/remove actions take place here
+    # echo -e "user = $user"
+    # echo -e "deny = $deny"
+    if [ $deny ]; then
+        action="remove"
+    else
+        action="add"
+    fi
+    sudo tljh-config {$action}-item auth.GitHubOAuthenticator.allowed_users {$user}
 else
     help
 fi
