@@ -43,7 +43,7 @@ if [ $user ]; then
     else
         action="add"
     fi
-    sudo tljh-config {$action}-item auth.GitHubOAuthenticator.allowed_users {$user}
+    sudo tljh-config ${action}-item auth.GitHubOAuthenticator.allowed_users ${user}
 else
     help
 fi
