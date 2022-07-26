@@ -1,7 +1,15 @@
 #! /usr/bin/env bash
 # Push a single file to the home directory of all users on a tljh instance.
 
+if [ -z $OES_HUB ]; then
+    OES_HUB="lab"
+fi
+
 FILE=/etc/skel/hello-$OES_HUB.ipynb
+if [ ! -f $FILE ]; then
+    echo "File $FILE does not exist"
+    exit 1
+fi
 
 echo "Copying $FILE:"
 for _dir in /home/*; do
