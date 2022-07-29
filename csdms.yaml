@@ -35,5 +35,6 @@ dependencies:
   - numba
   - scikit-image
   - pillow
+  - cartopy
   - pip:
     - meanderpy
