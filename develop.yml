@@ -1,7 +1,7 @@
 # A conda environment for software development on the OpenEarthscape JupyterHub.
 #
 # Usage:
-#   $ sudo -E conda env create --file=develop.yml
+#   $ sudo -E conda env create --file develop.yml
 #   $ sudo -E conda activate dev
 
 name: dev
@@ -53,7 +53,7 @@ dependencies:
   - pyyaml
   - rasterio
   - richdem
-  - rioaxrray
+  - rioxarray
   - scipy
   - sphinx-inline-tabs
   - sphinx>=4
@@ -67,3 +67,4 @@ dependencies:
   - tqdm
   - twine
   - xarray
+
