@@ -58,8 +58,8 @@ dependencies:
   - sphinx-inline-tabs
   - sphinx>=4
   - sphinx_rtd_theme
-  - sphinxcontrib.towncrier
-  - sphinxcontrib_github_alt
+    #  - sphinxcontrib.towncrier
+    #  - sphinxcontrib_github_alt
   - statsmodels
   - tabulate
   - tomlkit
