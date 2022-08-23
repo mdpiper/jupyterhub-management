@@ -1,0 +1,69 @@
+# A conda environment for software development on the OpenEarthscape JupyterHub.
+#
+# Usage:
+#   $ sudo -E conda env create --file=develop.yml
+#   $ sudo -E conda activate dev
+
+name: dev
+channels:
+  - conda-forge
+dependencies:
+  - python =3
+  - pip
+  - black
+  - bmi-c
+  - bmi-cxx
+  - bmi-fortran
+  - bmi-topography>=0.5
+  - bmipy
+  - build
+  - c-compiler
+  - click
+  - cmake
+  - coverage
+  - coveralls
+  - cxx-compiler
+  - dask[array]
+  - entrypoints
+  - flake8
+  - flake8-bugbear
+  - fortran-compiler
+  - holoviews
+  - hypothesis
+  - ipykernel
+  - ipython
+  - isort
+  - jupyter
+  - jupyter_client
+  - make
+  - matplotlib
+  - mesa
+  - nbformat
+  - nbsphinx>=0.2.12
+  - netcdf4
+  - numpy
+  - pandas
+  - pandoc
+  - pre-commit
+  - pyshp != 2.3.0
+  - pytest
+  - pytest-cov
+  - pytest-datadir
+  - pytest-xdist
+  - pyyaml
+  - rasterio
+  - richdem
+  - rioaxrray
+  - scipy
+  - sphinx-inline-tabs
+  - sphinx>=4
+  - sphinx_rtd_theme
+  - sphinxcontrib.towncrier
+  - sphinxcontrib_github_alt
+  - statsmodels
+  - tabulate
+  - tomlkit
+  - tornado
+  - tqdm
+  - twine
+  - xarray
