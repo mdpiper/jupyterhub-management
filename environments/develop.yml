@@ -29,6 +29,8 @@ dependencies:
   - flake8
   - flake8-bugbear
   - fortran-compiler
+  - gdal
+  - geopandas
   - holoviews
   - hypothesis
   - ipykernel
@@ -68,4 +70,5 @@ dependencies:
   - tqdm
   - twine
   - xarray
+  - xarray-spatial
 
