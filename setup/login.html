@@ -34,13 +34,14 @@
 
 </div>
 {% else %}
+
+<div style="text-align: center">
+  <img alt="CSDMS" style="width:66%;" src="https://csdms.colorado.edu/csdms_wiki/images/CSDMS-logo-color-tagline-ver_low.png">
+</div>
+
 <form action="{{login_url}}?next={{next}}" method="post" role="form">
 
-  <div style="margin-bottom:20px;">
-    <img src="https://csdms.colorado.edu/csdms_wiki/images/CSDMS-logo-color-tagline-ver_low.png">
-  </div>
-
-  <div class="auth-form-header">
+  <div class="auth-form-header" style="background:#888fa0;">
     Sign in
   </div>
   <div class='auth-form-body'>
@@ -83,6 +84,7 @@
         class='btn btn-jupyter'
         value='Sign in'
         tabindex="3"
+	style="background:#888fa0;"
         />
       <div class="feedback-widget hidden">
         <i class="fa fa-spinner"></i>
@@ -102,7 +104,7 @@
 
   </div>
 
-  <div style="margin-top:40px; padding-left:10%; padding-right:10%; text-align: center; font-size: 80%;">
+  <div style="margin-top:20px; padding-left:10%; padding-right:10%; text-align:center; font-size:75%;">
     <p>The <a href="https://csdms.colorado.edu">Community Surface Dynamics Modeling System</a> (CSDMS) and <a href="https://openearthscape.org">OpenEarthscape</a> are supported by the U.S. National Science Foundation.</p>
     <a href="https://www.nsf.gov" target="_blank">
       <img alt="National Science Foundation" style="width:50px;" src="https://csdms.colorado.edu/csdms_wiki/skins/common/nsf1.gif">
