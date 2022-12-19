@@ -1,4 +1,4 @@
-#! /usr/env/bin bash
+#! /usr/bin/env bash
 # Rank the top users of disk space on a Hub.
 
 sudo -E du -hs /home/jupyter-* | sort -hr | head

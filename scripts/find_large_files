@@ -1,4 +1,4 @@
-#! /usr/env/bin bash
+#! /usr/bin/env bash
 # Find large files and rank them by size.
 
 sudo -E find /home/jupyter-* -size +10M -exec ls -sh1 {} + | sort -hr | head
