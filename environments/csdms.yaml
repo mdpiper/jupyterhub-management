@@ -16,6 +16,7 @@ dependencies:
   - xarray
   - pandas
   - matplotlib
+  - seaborn
   - notebook
   - bmipy
   # - bmi-example-python
@@ -25,6 +26,7 @@ dependencies:
   - pymt_cem
   - pymt_child
   - pymt_ecsimplesnow
+  - pymt_gipl
   - pymt_hydrotrend
   - pymt_permamodel
   - pymt_sedflux
