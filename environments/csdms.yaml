@@ -1,8 +1,8 @@
 # A conda environment for the CSDMS kernel in the OpenEarthscape JupyterHub.
 #
 # Usage:
-#   $ sudo -E conda env create --file=csdms.yaml
-#   $ sudo -E conda activate csdms
+#   $ sudo -E mamba env create --file csdms.yaml
+#   $ sudo -E mamba activate csdms
 
 name: csdms
 channels:
@@ -21,7 +21,7 @@ dependencies:
   - bmipy
   # - bmi-example-python
   - pymt >=1.3
-  - landlab >=2.5
+  - landlab >=2.6
   - terrainbento
   - pymt_cem
   - pymt_child

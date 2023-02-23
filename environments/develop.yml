@@ -1,8 +1,8 @@
 # A conda environment for software development on the OpenEarthscape JupyterHub.
 #
 # Usage:
-#   $ sudo -E conda env create --file develop.yml
-#   $ sudo -E conda activate dev
+#   $ sudo -E mamba env create --file develop.yml
+#   $ sudo -E mamba activate dev
 
 name: dev
 channels:
