@@ -1,5 +1,5 @@
 #!/bin/sh
 
 /usr/bin/certbot renew
-systemctl restart landlab-rest.service
+/usr/bin/systemctl restart landlab-rest.service
 exit 0
