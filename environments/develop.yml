@@ -44,6 +44,7 @@ dependencies:
   - nbformat
   - nbsphinx>=0.2.12
   - netcdf4
+  - nox
   - numpy
   - pandas
   - pandoc
@@ -71,4 +72,3 @@ dependencies:
   - twine
   - xarray
   - xarray-spatial
-
