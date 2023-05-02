@@ -19,7 +19,6 @@ dependencies:
   - seaborn
   - notebook
   - bmipy
-  # - bmi-example-python
   - pymt >=1.3
   - landlab >=2.6
   - terrainbento
@@ -40,3 +39,4 @@ dependencies:
   - cartopy
   - pip:
     - meanderpy
+    - git+https://github.com/csdms/bmi-example-python.git
