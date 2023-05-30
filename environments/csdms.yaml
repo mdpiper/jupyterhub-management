@@ -10,9 +10,13 @@ channels:
 dependencies:
   - bmi-geotiff
   - bmi-topography
+  - bmi-wavewatch3
   - bmipy
   - cartopy
+  - cdsapi
+  - cftime
   - imageio
+  - imageio-ffmpeg
   - ipykernel
   - landlab >=2.6
   - matplotlib
@@ -26,17 +30,22 @@ dependencies:
   - pymt_cem
   - pymt_child
   - pymt_ecsimplesnow
+  - pymt_era5
   - pymt_gipl
   - pymt_hydrotrend
   - pymt_permamodel
   - pymt_sedflux
+  - pymt_topography
   - python =3
   - scikit-image
   - scipy
-  - seaborn  
+  - seaborn
   - terrainbento
   - tqdm
   - xarray
+  - xesmf
+  - windrose
   - pip:
     - meanderpy
     - git+https://github.com/csdms/bmi-example-python.git
+    - git+https://github.com/pymt-lab/pymt_wavewatch3.git
