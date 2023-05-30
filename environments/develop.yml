@@ -1,15 +1,13 @@
-# A conda environment for software development on the OpenEarthscape JupyterHub.
+# A conda environment for software development on EarthscapeHub.
 #
 # Usage:
 #   $ sudo -E mamba env create --file develop.yml
-#   $ sudo -E mamba activate dev
+#   $ source activate dev
 
 name: dev
 channels:
   - conda-forge
 dependencies:
-  - python =3
-  - pip
   - black
   - bmi-c
   - bmi-cxx
@@ -48,12 +46,14 @@ dependencies:
   - numpy
   - pandas
   - pandoc
+  - pip
   - pre-commit
   - pyshp != 2.3.0
   - pytest
   - pytest-cov
   - pytest-datadir
   - pytest-xdist
+  - python =3
   - pyyaml
   - rasterio
   - richdem
@@ -62,8 +62,6 @@ dependencies:
   - sphinx-inline-tabs
   - sphinx>=4
   - sphinx_rtd_theme
-    #  - sphinxcontrib.towncrier
-    #  - sphinxcontrib_github_alt
   - statsmodels
   - tabulate
   - tomlkit
