@@ -23,6 +23,7 @@ dependencies:
   - cxx-compiler
   - cython
   - dask[array]
+  - deprecated
   - entrypoints
   - flake8
   - flake8-bugbear
@@ -34,11 +35,13 @@ dependencies:
   - ipykernel
   - ipython
   - isort
+  - jinja2
   - jupyter
   - jupyter_client
   - make
   - matplotlib
   - mesa
+  - model_metadata>=0.7
   - nbformat
   - nbsphinx>=0.2.12
   - netcdf4
@@ -56,9 +59,12 @@ dependencies:
   - python =3
   - pyyaml
   - rasterio
+  - rich-click
   - richdem
   - rioxarray
   - scipy
+  - seaborn
+  - shapely
   - sphinx-inline-tabs
   - sphinx>=4
   - sphinx_rtd_theme
