@@ -33,8 +33,10 @@ dependencies:
   - pymt_era5
   - pymt_gipl
   - pymt_hydrotrend
+  - pymt_nwis
   - pymt_permamodel
   - pymt_sedflux
+  - pymt_soilgrids
   - pymt_topography
   - python =3
   - scikit-image
