@@ -1,0 +1,14 @@
+# A conda environment for the R-based SpatialAnalysis kernel.
+#
+# Usage:
+#   $ sudo -E mamba env create --file spatial-analysis.yml
+#   $ source activate sa
+
+name: sa
+channels:
+  - conda-forge
+dependencies:
+  - r-base
+  - r-essentials
+  - r-irkernel
+  - jupyter
