@@ -1,19 +1,51 @@
 #! /usr/bin/env bash
-# Remove a user from a tljh instance.
+# Completely remove a user from a tljh instance.
 
 help="Usage: rmhubuser USER"
-if [[ $1 = "-h" ]]; then
-    echo -e $help
+help() {
+    echo -e "Usage: rmhubuser USER [-p | --prefix] [-h | --help]"
     exit 0
+}
+
+if [ "$#" == 0 ]; then
+    help
 fi
 
-user=jupyter-$1
+user=
+prefix=
 
-if id $user &>/dev/null; then
-    sudo -E du -hs /home/$user
-    sudo -E deluser $user --remove-home
-    echo "User $1 removed"
+i=1;
+for argument in "$@"; do
+    case $argument in
+        -h|--help)
+            help
+            ;;
+        -p|--prefix)
+            prefix=jupyter-
+            ;;
+        -?*)
+            help
+            ;;
+        *)
+            if [ -z $user ]; then user=$argument; else help; fi
+            ;;
+    esac
+
+    i=$((i + 1));
+done
+
+if [ $user ]; then
+    user=$prefix$user
+    # echo -e "user = $user"
+    if id $user &>/dev/null; then
+        sudo -E du -hs /home/$user
+        sudo -E deluser $user --remove-home
+        echo "User $1 removed"
+    else
+        echo "User $1 not found"
+    fi
 else
-    echo "User $1 not found"
+    help
 fi
+
 exit 0
