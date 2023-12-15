@@ -17,3 +17,7 @@ sets the name of the JupyterHub (e.g., "lab", "jupyter").
   
   overwriting the existing file. This hack came from tips in [this
   issue](https://github.com/jupyterhub/jupyterhub/issues/1385).
+
+* [maintenance.html](./maintenance.html): A replacement for [login.html](./login.html)
+  during the twice-yearly maintenance periods.
+  Rename it to `login.html` and follow the instructions above.
