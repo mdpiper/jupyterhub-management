@@ -13,7 +13,7 @@ fi
 
 echo "Copying $FILE:"
 for _dir in /home/*; do
-    /usr/bin/cp "$FILE" $_dir
+    /usr/bin/cp -p -f "$FILE" $_dir
     echo "-> $_dir"
 done
 
