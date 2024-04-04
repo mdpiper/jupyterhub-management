@@ -1,0 +1,12 @@
+bison
+flex
+libbz2-dev
+libzstd-dev
+libproj-dev
+proj-bin
+libreadline-dev
+libpng-dev
+libgdal-dev
+libglu1-mesa-dev
+libfftw3-dev
+gettext
