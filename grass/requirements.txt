@@ -1,4 +1,5 @@
 folium
+ipywidgets
 matplotlib
 numpy
 pandas
