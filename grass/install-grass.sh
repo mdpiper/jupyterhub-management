@@ -1,11 +1,15 @@
 #!/bin/bash
 
-git clone --depth 1 --branch 8.3.1 https://github.com/OSGeo/grass.git grass-src
+GRASS_DIR=grass-src
+PREFIX=/usr/local
 
-pushd grass-src
+if [ ! -d $GRASS_DIR ]; then
+    git clone --depth 1 --branch 8.3.1 https://github.com/OSGeo/grass.git $GRASS_DIR
+fi
 
+pushd $GRASS_DIR
 ./configure \
-    --prefix=/usr/local \
+    --prefix=$PREFIX \
     --enable-largefile=yes \
     --with-nls \
     --with-cxx \
@@ -20,9 +24,7 @@ pushd grass-src
     --with-sqlite=yes \
     --without-pdal \
     --with-openmp
-
 make
-
 make install
 
 popd
