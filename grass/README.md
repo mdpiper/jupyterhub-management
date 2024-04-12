@@ -2,9 +2,9 @@
 
 These are the steps I took to install GRASS GIS on EarthscapeHub instances.
 
-Start by logging to the underlying EC2 instance and updating the system packages.
+Start by logging to the underlying EC2 instance and upgrading the system packages.
 ```
-sudo apt update
+sudo apt upgrade
 ```
 May have to restart the instance afterward.
 
