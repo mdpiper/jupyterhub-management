@@ -15,14 +15,17 @@ dependencies:
   - cartopy
   - cdsapi
   - cftime
+  - click
   - imageio
   - imageio-ffmpeg
   - ipykernel
   - landlab >=2.6
   - matplotlib
+  - netcdf4
   - notebook
   - numba
   - numpy
+  - owslib
   - pandas
   - pillow
   - pip
@@ -39,6 +42,8 @@ dependencies:
   - pymt_soilgrids
   - pymt_topography
   - python =3
+  - pyyaml
+  - requests
   - scikit-image
   - scipy
   - seaborn
@@ -51,3 +56,4 @@ dependencies:
     - meanderpy
     - git+https://github.com/csdms/bmi-example-python.git
     - git+https://github.com/pymt-lab/pymt_wavewatch3.git
+    - pymt_dbseabed
