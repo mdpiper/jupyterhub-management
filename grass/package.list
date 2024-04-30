@@ -11,3 +11,4 @@ libgdal-dev
 libglu1-mesa-dev
 libfftw3-dev
 gettext
+libpdal-dev

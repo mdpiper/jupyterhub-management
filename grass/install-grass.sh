@@ -22,7 +22,7 @@ pushd $GRASS_DIR
     --with-opengl-libs=/usr/include/GL \
     --with-freetype=yes --with-freetype-includes="/usr/include/freetype2/" \
     --with-sqlite=yes \
-    --without-pdal \
+    --with-pdal \
     --with-openmp
 make
 make install
