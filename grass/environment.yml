@@ -1,0 +1,21 @@
+# A conda environment for building GRASS GIS from source.
+
+name: grass
+channels:
+  - conda-forge
+dependencies:
+  - pip
+  - python =3
+  - bison
+  - bz2file
+  - cairo
+  - fftw
+  - flex
+  - gdal
+  - geos
+  - gettext
+  - pdal
+  - proj
+  - readline
+  # - libpng-devel-cos7-x86_64
+
