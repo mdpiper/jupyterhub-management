@@ -3,6 +3,26 @@
 GRASS_DIR=grass-src
 PREFIX=/usr/local
 
+help() {
+    echo -e "Usage: install-grass [-p] [-h]"
+    exit 0
+}
+
+while getopts ":hp:" option; do
+   case $option in
+      h)
+         help
+         ;;
+      p)
+         PREFIX=$OPTARG
+         ;;
+     \?)
+         echo "Error: Invalid option"
+         help
+         ;;
+   esac
+done
+
 if [ ! -d $GRASS_DIR ]; then
     git clone --depth 1 --branch 8.3.1 https://github.com/OSGeo/grass.git $GRASS_DIR
 fi
