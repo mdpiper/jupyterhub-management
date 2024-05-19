@@ -8,14 +8,19 @@ dependencies:
   - python =3
   - bison
   - bz2file
+  - c-compiler
+  - cxx-compiler
   - cairo
   - fftw
   - flex
+  - freetype
   - gdal
   - geos
   - gettext
+  - make
   - pdal
+  - pkg-config
   - proj
   - readline
+  - zstd
   # - libpng-devel-cos7-x86_64
-
