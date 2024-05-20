@@ -75,7 +75,7 @@ source activate grass
 
 Run the `install-grass.sh` script to clone the GRASS GIS source and configure/make/install it.
 ```
-bash install-grass.sh --prefix $CONDA_PREFIX
+bash install-grass.sh -p $CONDA_PREFIX
 ```
 This installs a headless version of GRASS GIS into `$CONDA_PREFIX`.
 From a shell prompt, run it with with:
