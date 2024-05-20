@@ -29,7 +29,9 @@ if [ ! -d $GRASS_DIR ]; then
     git clone --depth 1 --branch 8.3.1 https://github.com/OSGeo/grass.git $GRASS_DIR
 fi
 
-./$GRASS_DIR/configure \
+pushd $GRASS_DIR
+
+./configure \
     --prefix=$PREFIX \
     --with-libs=$PREFIX/lib \
     --with-includes=$PREFIX/include \
@@ -53,4 +55,5 @@ if [ $? == 0 ]; then
     make -C $GRASS_DIR install
 fi
 
-exit $?
+popd
+exit 0
