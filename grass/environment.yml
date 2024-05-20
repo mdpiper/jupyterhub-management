@@ -13,14 +13,21 @@ dependencies:
   - cairo
   - fftw
   - flex
+  - folium
   - freetype
   - gdal
   - geos
   - gettext
+  - ipywidgets
   - make
+  - matplotlib
+  - numpy
+  - pandas
   - pdal
+  - pillow
   - pkg-config
+  - ply
   - proj
+  - pyvirtualdisplay
   - readline
   - zstd
-  # - libpng-devel-cos7-x86_64
