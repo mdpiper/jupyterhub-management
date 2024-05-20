@@ -41,7 +41,6 @@ pushd $GRASS_DIR
     --with-readline \
     --with-bzlib \
     --with-pthread \
-    --with-proj \
     --with-geos=$PREFIX/bin/geos-config \
     --with-cairo \
     --without-opengl \
@@ -49,7 +48,7 @@ pushd $GRASS_DIR
     --with-sqlite \
     --with-pdal \
     --with-openmp \
-    --without-zstd
+    --with-zstd
 
 if [ $? == 0 ]; then
     make -C $GRASS_DIR install
