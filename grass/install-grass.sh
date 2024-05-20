@@ -51,7 +51,8 @@ pushd $GRASS_DIR
     --with-zstd
 
 if [ $? == 0 ]; then
-    make -C $GRASS_DIR install
+    make
+    make install
 fi
 
 popd
