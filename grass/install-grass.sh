@@ -42,7 +42,7 @@ fi
     --with-proj \
     --with-geos=$PREFIX/bin/geos-config \
     --with-cairo \
-    --with-opengl \
+    --without-opengl \
     --with-freetype \
     --with-sqlite \
     --with-pdal \
