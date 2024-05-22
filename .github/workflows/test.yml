@@ -36,6 +36,12 @@ jobs:
           conda info
           conda list
 
-      - name: Run GRASS install script
+      - name: Install GRASS
         working-directory: ${{ github.workspace }}/grass
         run: bash install-grass.sh -p $CONDA_PREFIX
+
+      - name: Check the GRASS install
+        run: |
+          grass --version
+          grass --help
+          grass --config
