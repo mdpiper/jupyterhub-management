@@ -1,0 +1,41 @@
+name: Test
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    if:
+      github.event_name == 'push' || github.event.pull_request.head.repo.full_name !=
+      github.repository
+
+    runs-on: ${{ matrix.os }}
+
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    strategy:
+      matrix:
+        os: [macos-latest]
+        python-version: ["3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          miniforge-variant: Mambaforge
+          miniforge-version: latest
+          environment-file: ./grass/environment.yml
+          activate-environment: grass
+          python-version: ${{ matrix.python-version }}
+          auto-activate-base: false
+
+      - name: Show conda installation info
+        run: |
+          conda info
+          conda list
+
+      - name: Run GRASS install script
+        working-directory: ${{ github.workspace }}/grass
+        run: bash install-grass.sh -p $CONDA_PREFIX
